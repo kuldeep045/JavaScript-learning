@@ -35,3 +35,32 @@ console.log(typeof(myObj))
 console.log(typeof(newfunc))
 
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//Stack(Primitive ) and Heap Memory(Non-Primitive)
+
+let myName = "Cooldeep";
+let anotherName = myName; //Provides a copy so that if myName is modified no change in anotherName occurs
+
+
+console.log(myName, anotherName);
+myName = "Sajja";
+console.log(myName, anotherName);
+
+
+
+
+
+// +++++++++++++++++++++//
+let Obj1 = {
+    name : "One",
+    email : "one@google.com"
+}
+let Obj2 = Obj1; //Provides reference of original so that any change in original also changes in Obj2
+console.log(Obj1.email, Obj2.email)
+
+Obj1.email = "Cooldeep@wright.edu"
+console.log(Obj1.email, Obj2.email)
+
+
+
