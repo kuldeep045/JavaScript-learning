@@ -18,9 +18,20 @@ let defination; //Not defined yet
 // Symbol
 
 
-// nonPrimitiveDataTypes
-// Object
-
-
 console.log(typeof(defination));
+// nonPrimitiveDataTypes
+// Object,  array, function
+let myArr = [1, 2, 3, 4];
+let myObj = {
+    name : "Kuldeep",
+    cellNo: 9889678678
+}
+
+function newfunc (){
+    console.log("I am a function...")
+}
+console.log(typeof(myArr))
+console.log(typeof(myObj))
+console.log(typeof(newfunc))
+
 
