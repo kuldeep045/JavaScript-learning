@@ -20,5 +20,13 @@ const obj = Object.assign({}, tinderUser, regularUser)
 //console.log(obj)
 
 let newObj = {...tinderUser, ...regularUser}
-console.log(newObj)
+//console.log(newObj)
 
+
+
+let myObj = {
+    name: "Kuldeep",
+    country: "US"
+}
+let {country: cont} = myObj //de-structring
+console.log(cont)
