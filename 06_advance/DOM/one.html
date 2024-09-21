@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - kaisa hai bhai !!</title>
+</head>
+
+<body style="background: black; color: #fff">
+    <h1 class="heading" id="headTag">I am heading</h1>
+    <h2 id="h2">I am a second <p style="display: none;">heading.</p></h2> 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aperiam
+        dignissimos? Quidem!
+    </p>
+</body>
+
+<script>
+    let head = document.getElementById("headTag");
+    let sec_head = document.getElementById("h2");
+    //let head = document.getElementsByClassName("heading")[0]; to do all the classes must loop throught he HTML collection provided by mthis line
+
+    head.style.color = "red"; // this line adds inline css
+    head.setAttribute("theme", "blue")//set this attribute to h1 tag
+    head.setAttribute("class", "heading_modified") //override the previous class
+    head.innerText = "I am first heading"
+
+
+    console.log(head.getAttribute("id")) //get the value of id
+
+    sec_head.setAttribute("class", "new_head")
+    sec_head.style.backgroundColor = "green"
+    sec_head.style.padding = "14px"
+    sec_head.style.borderRadius = "15px"
+
+
+    console.log(sec_head.innerText) //gives only visible part
+    console.log(sec_head.textContent) //returns visible as well as invisible parts....
+    
+    
+    
+    console.log(head);
+    console.log(sec_head)
+</script>
+
+</html>

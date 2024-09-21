@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - kaisa hai bhai !!</title>
+</head>
+
+<body style="background: black; color: #fff">
+    <h1>Lorem ipsum dolor sit.</h1>
+    <h1 class="heading" id="headTag">I am heading</h1>
+    <ul>
+        <li class="list-items">one</li>
+        <li class="list-items">Two</li>
+        <li class="list-items">three</li>
+        <li class="list-items">four</li>
+        <li class="list-items">five</li>
+    </ul>
+</body>
+
+<script>
+    // console.log(document.querySelector("h1")) //select first h1
+    //console.log(document.querySelectorAll("h1")) //select all h1
+
+    const listItems = document.querySelectorAll("li"); //gives nodelist
+    listItems.forEach((li) => {
+        li.style.backgroundColor = "gold";
+    });
+
+
+
+    const listByClass = document.getElementsByClassName("list-items")//returns a HTML collection
+   // listByClass.forEach( element => console.log(element)) //cant use for esch on a html collection
+
+
+    const newArr = Array.from(listByClass)
+    console.log(newArr)
+    newArr.map((element) => {
+        element.style.fontSize = "2rem"
+    })
+
+    //console.log(listItems);
+</script>
+
+</html>
